@@ -14,7 +14,7 @@ WARNING:
 */
 
 --Drop and recreate the 'DataWarehouse'
-IF EXISTS (SELECT 1 FROM sys.databse WHERE name = 'DataWarehouse')
+IF EXISTS (SELECT 1 FROM sys.database WHERE name = 'DataWarehouse')
   BEGIN
     ALTER DATABASE DataWarehouse SET SINGLE_USER WITHACK IMMEDIATE;
     DROP DATABASE DataWarehouse;
